@@ -18,6 +18,7 @@ class DataActivity : AppCompatActivity() {
     private fun getData() {
         val sharedPreferences: SharedPreferences =
             this.getSharedPreferences("kotlinsharedpreference", Context.MODE_PRIVATE)
+
         val sharedNameValue = sharedPreferences.getString("name_key", "defaultname")
 
         textData.setText(sharedNameValue)
